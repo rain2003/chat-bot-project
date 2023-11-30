@@ -1,0 +1,24 @@
+from flask import Flask, jsonify, request
+from flask_cors import CORS  
+from bardapi import Bard  
+import os
+
+os.environ["_BARD_API_KEY"] = "cwj7cjN4dW_2FAAAiAe_HK9JxPjqnFtyy-I6-CR5WguwjQwVNypgpaH-91S98LYDPosjow."
+
+app = Flask(__name__)
+CORS(app)  
+
+@app.route('/api', methods=["POST"])
+def qa():
+    if request.method == "POST":
+        data = request.get_json()
+        question = data.get("question")
+
+        bard_response = Bard().get_answer(str(question))
+        response = bard_response['content']
+
+        response_data = {"question": question, "answer": response}
+        return jsonify(response_data)
+
+if __name__ == "__main__":
+    app.run(debug=True)
