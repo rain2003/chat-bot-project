@@ -3,7 +3,7 @@ from flask_cors import CORS
 from bardapi import Bard  
 import os
 
-os.environ["_BARD_API_KEY"] = "cwj7cjN4dW_2FAAAiAe_HK9JxPjqnFtyy-I6-CR5WguwjQwVNypgpaH-91S98LYDPosjow."
+os.environ["_BARD_API_KEY"] = "Your API key"
 
 app = Flask(__name__)
 CORS(app)  
