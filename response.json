@@ -1,0 +1,85 @@
+{
+    "intents": [
+        {
+            "patterns": [
+                "hello",
+                "hi",
+                "hey"
+            ],
+            "responses": [
+                "Hi there!",
+                "Hello!",
+                "Greetings!",
+                "hi there"
+            ]
+        },
+        {
+            "patterns": [
+                "how are you",
+                "how's it going"
+            ],
+            "responses": [
+                "I'm doing well, thank you!",
+                "I'm good, how about you?"
+            ]
+        },
+        {
+            "patterns": [
+                "bye",
+                "goodbye",
+                "see you later"
+            ],
+            "responses": [
+                "Goodbye!",
+                "See you later!",
+                "Have a great day!"
+            ]
+        },
+        {
+            "patterns": [
+                "thanks",
+                "thank you",
+                "thanks a lot"
+            ],
+            "responses": [
+                "You're welcome!",
+                "No problem!",
+                "Anytime!"
+            ]
+        },
+        {
+            "patterns": [
+                "what is your name?",
+                "tell me your name?",
+                "what's your name?"
+            ],
+            "responses": [
+                "Chatbot NS"
+            ]
+        },
+        {
+            "patterns": [
+                "hwry"
+            ],
+            "responses": [
+                "i am fine"
+            ]
+        },
+        {
+            "patterns": [
+                "cheers"
+            ],
+            "responses": [
+                "2"
+            ]
+        },
+        {
+            "patterns": [
+                "today is eid please tell all people not to forget their purpose"
+            ],
+            "responses": [
+                "2"
+            ]
+        }
+    ]
+}

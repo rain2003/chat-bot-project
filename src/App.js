@@ -1,5 +1,6 @@
 import './App.css';
 import sendBtn from './assets/send.svg';
+import mic from './assets/mic.svg'
 import React, { useEffect, useRef, useState } from 'react';
 import { sendMessage } from './resp';
 
@@ -99,7 +100,12 @@ function App() {
               onKeyDown={handleEnter}
             />
             <button className='send' onClick={handleAskQuestion}>
-              <img src={sendBtn} alt='send'></img>
+  <img src={sendBtn} alt='send' style={{ marginRight: '10px' }}></img>
+
+            </button>
+            <button className='send' onClick={handleAskQuestion}>
+  <img src={mic} alt='send' style={{ marginRight: '10px' }}></img>
+
             </button>
           </div>
           <p className='text-white'>
